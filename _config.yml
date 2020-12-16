@@ -1,0 +1,47 @@
+title: whiteglass theme
+author: Yous
+description: 'Minimal, responsive Jekyll theme for hackers.'
+baseurl: ''
+url: ''
+lang: en
+timezone: UTC
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - Rakefile
+  - README.md
+  - LICENSE.txt
+  - CHANGELOG.md
+  - jekyll-whiteglass.gemspec
+  - screenshot.png
+  - vendor
+twitter_username: null
+twitter_image: null
+facebook_app_id: null
+facebook_image: null
+google_analytics: null
+comments: false
+plugins:
+  - jekyll-archives
+  - jekyll-paginate
+  - jekyll-sitemap
+markdown: kramdown
+excerpt_separator: <!-- more -->
+permalink: '/:year/:month/:day/:title/'
+paginate_path: '/posts/:num/'
+paginate: 5
+kramdown:
+  auto_ids: false
+  enable_coderay: false
+  entity_output: as_char
+  footnote_nr: 1
+  smart_quotes: 'lsquo,rsquo,ldquo,rdquo'
+  toc_levels: 1..6
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layout: category_archives
+  permalinks:
+    category: '/categories/:name/'
+    tag: '/tags/:name/'
